@@ -43,7 +43,6 @@ jobs:
           aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
           aws-session-token: ${{secrets.AWS_SESSION_TOKEN}}
           aws-region: us-east-1
-          role-to-assume: arn:aws:iam::700874616209:role/LabRole
 
       - name: Login to Amazon ECR
         id: login-ecr

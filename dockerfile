@@ -1,7 +1,5 @@
 FROM rust:latest as builder
 
-RUN apt-get update && apt-get install -y libcurl4
-
 WORKDIR /usr/src/app
 
 COPY . .
