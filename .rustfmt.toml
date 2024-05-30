@@ -1,0 +1,3 @@
+max_width = 150
+fn_args_layout = "Compressed"
+#control_brace_style = "ClosingNextLine"

@@ -1,0 +1,13 @@
+[Unit]
+Description = Service to get better estimates of the route 300 away from UL
+After = network.target
+
+[Service]
+WorkingDirectory = C:/Users/nanda/Repos/better300
+ExecStart = C:/Users/nanda/Repos/better300/target/release/get_data
+User = user
+Group = user
+Type = oneshot
+
+[Install]
+WantedBy=multi-user.target

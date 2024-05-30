@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: better300
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: better300
+  template:
+    metadata:
+      labels:
+        app: better300
+    spec:
+      containers:
+        - name: better300
+          image: 700874616209.dkr.ecr.us-east-1.amazonaws.com/better300:latest
+          ports:
+            - containerPort: 8061
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 8061
+            initialDelaySeconds: 10
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 8061
+            initialDelaySeconds: 10
+            periodSeconds: 10

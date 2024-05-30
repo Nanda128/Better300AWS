@@ -1,0 +1,8 @@
+[Unit]
+Description=Run the update script for Better 300
+
+[Timer]
+OnCalendar=*-*-* *:*:00
+
+[Install]
+WantedBy=timers.target

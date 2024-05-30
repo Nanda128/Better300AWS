@@ -1,0 +1,96 @@
+/* Basic stuff */
+body {
+    max-width: 100ch;
+    margin: 0 auto;
+    padding: 8px;
+    line-height: 1.2;
+}
+/* To make sure the header text is always bigger than a normal h1*/
+header h1 {
+    font-size: 300%;
+}
+
+/* Dark Mode is only mode */
+body {
+    color: #fff;
+    background: #3F3F3F;
+}
+
+/* get these to play nicely with teh max width */
+header, main, footer, img{
+    max-width: 100ch;
+}
+
+a:link{
+    color:#5bf
+}
+a:visited{
+    color:#ccf
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #999;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+li p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+p code {
+    background-color: #474949;
+    border-radius: 0.3em;
+    padding: 4px 5px 6px;
+}
+
+pre {
+    max-width: 95vw;
+    display: block;
+    overflow: auto;
+}
+
+/* navbar */
+.links ul, .breadcrumb ul {
+    list-style-type: none;
+    display: flex;
+    padding-left: 0;
+}
+
+/* sticky footer */
+main {
+    min-height: calc(95vh - 150px);
+}
+footer {
+    min-height: 50px;
+}
+
+.md-spoiler {
+    background: #333333;
+    border-radius: 0.2em;
+    color: transparent;
+}
+/* hover is for desktop, active for mobile*/
+.md-spoiler:hover, .md-spoiler:active {
+    background: transparent;
+    color: inherit;
+}
+
+/* every page gets a scrollbar to stop it shifting around */
+html {
+    overflow-y: scroll;
+}
+
+label, input, select {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+[hidden] {
+    display: none !important;
+}

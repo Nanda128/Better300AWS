@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: better300
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: better300
+  template:
+    metadata:
+      labels:
+        app: better300
+    spec:
+      containers:
+      - name: better300
+        image: 700874616209.dkr.ecr.us-east-1.amazonaws.com/better300:latest
+        ports:
+        - containerPort: 8080
+        env:
+        - name: NODE_ENV
+          value: "production"
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
