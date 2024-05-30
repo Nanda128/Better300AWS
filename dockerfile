@@ -6,7 +6,7 @@ COPY . .
 
 RUN cargo build --release
 
-FROM ubuntu-slim:latest 
+FROM ubuntu:latest 
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     sqlite3 \
