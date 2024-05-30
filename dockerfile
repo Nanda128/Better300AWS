@@ -14,7 +14,6 @@ FROM ubuntu:24.04
 RUN apt-get update && apt-get install -y --no-install-recommends \
     sqlite3 \
     libsqlite3-dev \
-    libcurl4 \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
