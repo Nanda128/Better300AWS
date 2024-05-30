@@ -1,3 +1,5 @@
+# NOTE: This file is an artifact from the original author's implementation. 
+
 image: rust:latest
 
 stages:

@@ -6,8 +6,7 @@ COPY . .
 
 RUN cargo build --release
 
-#Debian didnt have the necessary glibc library so we're using ubuntu!
-FROM ubuntu:24.04
+FROM ubuntu-slim:latest 
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     sqlite3 \
@@ -23,6 +22,11 @@ COPY --from=builder /usr/src/app/target/release/better300 /usr/src/app/
 EXPOSE 8061
 
 RUN echo -e "#!/bin/bash\n\
+    ./get_data\n\
+    ./better300" > /usr/src/app/start.sh \
+    && chmod +x /usr/src/app/start.sh
+
+RUN echo -e "#!/usr/bin/env pwsh\n\
     ./get_data\n\
     ./better300" > /usr/src/app/start.sh \
     && chmod +x /usr/src/app/start.sh

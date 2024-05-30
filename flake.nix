@@ -1,3 +1,5 @@
+# `This file is an artifact from the original author's implementation`
+
 {
 	description = "A better M7 Route 300 express";
   
