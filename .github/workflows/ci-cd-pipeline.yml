@@ -50,8 +50,8 @@ jobs:
 
       - name: Build, tag, and push docker image to Amazon ECR
         env:
-          REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          REPOSITORY: 700874616209.dkr.ecr.us-east-1.amazonaws.com/better300
+          REGISTRY: 700874616209.dkr.ecr.us-east-1.amazonaws.com/better300
+          REPOSITORY: better300
           IMAGE_TAG: latest
         run: |
           docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG .

@@ -7,7 +7,7 @@ body {
 }
 /* To make sure the header text is always bigger than a normal h1*/
 header h1 {
-    font-size: 400%;
+    font-size: 300%;
 }
 
 /* Dark Mode is only mode */
