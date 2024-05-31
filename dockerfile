@@ -32,3 +32,6 @@ RUN echo -e "#!/usr/bin/env pwsh\n\
     && chmod +x /usr/src/app/start.sh
 
 CMD ["./better300"]
+
+
+
