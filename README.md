@@ -5,3 +5,5 @@ This is a project made by Nandakishore Vinayakrishnan that is based off of Brend
 The Original Author's README file is named OriginalREADME.md.
 
 This project was made as part of BSc/MSc Immersive Software Engineering's Cloud Computing module.
+
+By: Nandakishore Vinayakrishnan, SID: 23070854.
