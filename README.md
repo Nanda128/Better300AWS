@@ -9,5 +9,3 @@ This project was made as part of BSc/MSc Immersive Software Engineering's Cloud 
 By: Nandakishore Vinayakrishnan, SID: 23070854.
 
 GitHub Repository Link: https://github.com/Nanda128/Better300AWS
-
-test
